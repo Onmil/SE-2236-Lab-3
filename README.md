@@ -1,4 +1,4 @@
-Compile all Java Files:
+Compile all Java Files (Done everytime when changes are made in any Java files): 
 javac -source 1.8 -target 1.8 -d bin -cp ".;lib/algs4.jar" src/*.java
 
 For running the visualizer on Pointplotter.java:
