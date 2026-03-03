@@ -11,8 +11,15 @@
  *************************************************************************/
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.In;
+
 public class PointPlotter {
     public static void main(String[] args) {
+
+        // check for input file argument
+        if (args.length == 0) {
+            System.out.println("Usage: java PointPlotter input.txt");
+            return;
+        }
 
         // rescale coordinates and turn on animation mode
         StdDraw.setXscale(0, 32768);
@@ -22,6 +29,7 @@ public class PointPlotter {
         // read in the input
         String filename = args[0];
         In in = new In(filename);
+
         int N = in.readInt();
         for (int i = 0; i < N; i++) {
             int x = in.readInt();
@@ -31,6 +39,6 @@ public class PointPlotter {
         }
 
         // display to screen all at once
-        StdDraw.show(0);
+        StdDraw.show();
     }
 }
