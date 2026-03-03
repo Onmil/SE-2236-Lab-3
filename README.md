@@ -6,3 +6,7 @@ java -cp ".;bin;lib/algs4.jar" PointPlotter input8.txt <- replace input.txt with
 
 For running the visualizer on Pointplotter.java WITH segmentation (FAST):
 Get-Content input8.txt | java -cp ".;bin;lib/algs4.jar" Fast
+
+
+For running the visualizer on Pointplotter.java WITH segmentation (BRUTE):
+Get-Content input8.txt | java -cp ".;bin;lib/algs4.jar" Brute
